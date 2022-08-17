@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+</head>
+<body>
+    <main>
+        <section class="logo">
+            <img src="img/logo.svg" alt="Logo da Alura">
+        </section>
+
+        <section class="input">
+            <textarea model="input" placeholder="Digite seu texto" id="mensagem"></textarea>
+
+            <div class="lista-erros"></div>
+
+            <div class="information">
+                <img src="img/exclamacao.svg" alt="Apenas letras minúsculas e sem acento.">
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+
+            <div class="action"style="color: black;">
+                <button id="codificar" class="botao-div">Codificar</button>
+                <button id="decodificar">Decodificar</button>
+                <button id="copiar">Copiar</button>
+            </div>
+        </section>
+
+        <section class="output">
+            <div>
+                <div>
+                    <textarea name="" id="resultado"></textarea>
+                </div>
+
+                <div id="div-alterar">
+                    <img src="img/figura.svg" alt="">
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_pghdouhq.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
+                    <h2>Nenhuma mensagem encontrada</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+
+
+<script src="logica.js" type="module"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</html>

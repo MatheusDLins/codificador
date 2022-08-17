@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fc;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100px 65% auto;
+}
+
+section.logo {
+    padding: 30px;
+    text-align: center;
+}
+
+section.input,section.output {
+    margin: 20px;
+    padding: 20px 30px;
+}
+
+section.output {
+    border: 1px solid #f5f5f5;
+    border-radius: 30px;
+    background-color: white;
+}
+
+section.input,section.output div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.input {
+    padding-top: 100px;
+}
+
+section.input .information {
+    color: #495057;
+    opacity: 0.8;
+    margin: 15px 0;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+section.output div {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.output div img {
+    width: 80%;
+}
+
+section.output div h2 {
+    font-family: 'Inter';
+    font-size: 1.4em;
+    margin: 10px 10px 20px;
+    font-weight: bold;
+}
+
+section.output div p {
+    font-size: 1em;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 32px;
+    outline: none;
+    color: #495057;
+    background-color: transparent;
+}
+
+section.input textarea {
+    color: #0A3871;
+}
+
+button {
+    
+    padding: 15px 10px;
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+
+}
+
+button#codificar{
+    background-color: #0a3771;
+    color: white;
+}
+  
+button#codificar:hover {
+    background-color: #1051a0;
+    color: #fff;
+}
+
+#decodificar, #copiar, #escutar{
+    background-color: #f5f5f5;
+    color: #171717;
+}
+
+#decodificar:hover, #copiar:hover, #escutar:hover {
+    background-color: #D8DFE8;
+    color: #171717;
+}
+
+div.actions {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 250px 250px;
+}
+
+@media (max-width: 1024px) {
+
+main {
+    grid-template-rows: 100px 1fr auto;
+    grid-template-columns: auto;
+}
+  
+section.logo {
+    text-align: left;
+}
+  
+section.input,section.output {
+    margin: 20px;
+    padding: 20px 5px;
+}
+  
+section.output div {
+    gap: 10px;
+    padding: 10px;
+}
+  
+section.output div h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+  
+section.output div img {
+    display: none;
+}
+  
+div.actions {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+  
+div.actions button {
+    padding: 20px 20px;
+}
+}
